@@ -1,0 +1,83 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+
+}
+body{
+    margin: 0;     /*margin and padding '0' se start without gap of each paragraph*/
+    padding: 0;
+}
+.first-image, .second-image, .third-image, .fourth-image{
+    background-position: center;
+    background-size: cover;         /* jo img h wo pura screen me spread hoggya*/
+    background-attachment: fixed;   /*background img fixed ho gya*/
+
+}
+
+.first-image{
+    background-image: url(images/image-2.jpg);
+    min-height: 500px;
+
+
+}
+
+.second-image{
+    background-image: url(images/image-1.jpg);
+    min-height: 500px;
+    opacity: 0.8; /*opacity means blurness 1 se kam so blur visible*/
+    
+}
+
+.third-image{
+    background-image: url(images/image-3.jpg);
+    min-height: 400px;
+    
+}
+
+.fourth-image{
+    background-image: url(images/image-4.jpg);
+    min-height: 400px;
+    opacity: 0.8;
+    
+}
+section{
+    text-align: center;
+    padding: 5rem 3rem;
+}
+.section-light{
+    background-color: white;
+    color: black;
+
+}
+
+.section-dark{
+    background-color: black;
+    color: white;
+    
+}
+.image {          /*content h jo image ke upper show hoga ussin ka pos. setup h yha*/
+    /* display: flex;     /*nothing changes line in img*/
+    /*justify-content: center;     /*corner se apne hi line ke centre me aagya*/ 
+    /*align-items: center;          /*middle of img centre me aa gya*/
+    position: relative;           /* relative dene se line ka top,width etc alag se de skte h*/
+}
+.image div{
+    position: absolute;      /*absolute mtlb ancester se link krega*/
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 8px;
+}
+.first-image span{         /*agar background white h img ka so black content dalne ka method*/
+    color: white;
+    background-color: black;
+    padding: 20px;
+
+}
+
+

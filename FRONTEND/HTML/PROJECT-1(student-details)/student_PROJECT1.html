@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+    <header>
+        <h2>Student Registration Form</h2>
+        <p>Please fill Out this form to Register....</p>
+
+    </header>
+    <hr>
+    <main>
+
+        <fieldset>   <!--'fieldset' used for boundary baane ke liye and 'legend' used boundry pr kuch likhne ke liye-->
+            <legend>Personal Information</legend>
+            <form action="https://example.com/submit" method="post">
+                <label for="first-name"> First Name:</label>
+                <input type="text" name="first-name" required><br><br>
+            </form>
+            <form action="https://pw.com" method="post">
+                <label for="last-name"> Last Name:</label>
+                <input type="text" name="last-name" required><br><br>
+            </form>
+            <form action="abc.com" method="post">
+                <label for="Date of birth">Date of Birth:</label>
+                <input type="date" name="Date of birth" placeholder="dd/mm/yyyy"><br><br> <!--yha type='date' tb hi db ka icon aaya last me-->
+            </form>
+            <form action=".login/.com" method="post">
+                <label for="Gender">Gender:</label>
+                <input type="radio" name="Gender" value="Male"> <!--'radio' is used for making small circle -->
+                <label for="Male">Male</label>
+                <input type="radio" name="Gender" value="Female">
+                <label for="Female">Female</label>
+                <input type="radio" name="Gender" Value="other">
+                <label for="other">Other</label><br><br>
+            </form>
+            <form action="https://sfsk.com" method="post">
+                <label for="email-id">Email-id:</label>
+                <input type="text" name="email-id" required><br><br>
+            </form>
+            <form action="https://exp.com" method="post">
+                <label for="phone-no">Phone-no:</label>
+                <input type="text" name="phone-no" required><br><br>
+            </form>
+
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>Adress Information</legend>
+            <form action="https.abc/.com" method="post">
+                <label for="address">Address:</label><br>
+                <textarea name="address" rows="5" cols="50"></textarea>
+
+            </form>
+            <form action="https/abc.com" method="post">
+                <label for="city">City:</label>
+                <input type="text" name="city"required><br><br>
+    
+            </form>
+            <form action="https/abc.com" method="post">
+                <label for="state">State:</label>
+                <input type="text" name="state"required><br><br>
+    
+            </form>
+            <form action="https/abc.com" method="post">
+                <label for="zip-code">ZIP-code:</label>
+                <input type="text" name="zip-code"required><br><br>
+    
+            </form>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>Education Information</legend>
+            <form action="https/abc.com" method="post">
+                <label for="high school">High School:</label>
+                <input type="text" name="high school"required><br><br>
+    
+            </form>
+            <form action="https/abc.com" method="post">
+                <label for="GPA">GPA:</label>
+                <input type="text" name="GPA"required><br><br>
+    
+            </form>
+            <form action="https/abc.com" method="post">
+                <label for="intended major">Intended Major:</label>
+                <input type="text" name="intended major"required><br><br>
+    
+            </form>
+            <form action="https/abc.com" method="post">
+                <label for="year of graduation">Year of Graduation:</label>
+                <input type="text" name="year of graduation"required><br><br>
+    
+            </form>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>Additional Information</legend>
+            <form action="https/abc.com" method="post">
+                <label for="interest and hobbies">Interest and Hobbies:</label><br>
+                <textarea name="Interest and Hobbies" rows="5" cols="50"></textarea>
+    
+            </form>
+            <form action="https/abc.com" method="post">
+                <label for="additional comments">Additional Comments:</label><br>
+                <textarea name="additional comments" id="additional comments" rows="5" cols="50"></textarea> <!--input ke jagah use 'textarea' yha many box combined-->>
+    
+            </form>
+
+        </fieldset>
+        <hr>
+        <input type="submit" value="Register">
+
+
+    </main>
+    <hr>
+    <footer>
+        <h5>@2024 Student Registration.All Right Reserved</h5>
+
+
+    </footer>
+    <hr>
+
+</body>
+
+</html>

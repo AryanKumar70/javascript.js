@@ -1,0 +1,58 @@
+#parent{
+    width: 600px;
+    background-color: aquamarine;
+    padding: 15px;
+    border: 1px solid greenyellow;
+
+    display: grid;  /*grid is activate to parent*/
+
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "header header header header header header"
+    "menu content content content content ads"
+    "menu content content content content ads"
+    "menu content content content content ads"
+    "footer footer footer footer footer footer"
+    ;
+
+    gap: 5px;  /*charo taraf se gap ho gya*/
+
+}
+.header{
+    grid-area: header;
+    border: 1px solid black;
+    text-align: center;
+    background-color: rosybrown;
+
+}
+.footer{
+    grid-area:footer;
+    border: 1px solid black;
+    text-align: center;
+    background-color: rosybrown;
+
+}
+.menu{
+    grid-area:menu;
+    border: 1px solid black;
+    font-size: small;
+    background-color: darkseagreen;
+    text-align: center;
+
+}
+.ads{
+    grid-area:ads;
+    border: 1px solid black;
+    font-size: small;
+    background-color: chocolate;
+
+}
+.content{
+    grid-area:content;
+    border:1px solid black;
+    background-color: blanchedalmond;
+    text-align: center;
+    padding: 20px;
+
+
+}

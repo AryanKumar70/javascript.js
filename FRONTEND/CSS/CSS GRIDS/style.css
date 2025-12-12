@@ -1,0 +1,56 @@
+#parent{
+    display:grid;  /*makes the parent containers*/
+
+   /* grid-template-columns: minmax(20px,40px) 2fr 1fr;    /*  [minmax me min and max space rhega hi] ,1fr=1/4 , 2fr=2/4*/
+
+    grid-template-columns: 1fr 2fr 1fr;    /*   ,1fr=1/4 , 2fr=2/4*/
+
+    grid-template-rows: repeat(3,200px) ;   /* 3rows and uska size define usinng repeat function*/
+    
+    grid-column-gap: 30px;  /*2 columns ke bich me gap dena */
+
+    grid-row-gap:20px ;
+
+    grid-template-areas: /*yha har row me box deke area define kiye and box me edit kr skte h class use krke*/
+    "box1 box1 box1"
+    "box2 box2 box3"
+    "box2 box2 box3";
+
+    width: 400px;     /*border ka chauri h*/
+
+    border: 2px solid red;
+
+    padding: 12px;
+
+    background-color: cadetblue;
+
+
+
+
+}
+.child{
+    border: 1px solid black;
+
+    background-color: brown;
+
+    padding: 5px;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+.box1{
+ grid-area: box1;
+ background-color: aquamarine;
+}
+
+.box2{
+   grid-area: box2;
+   background-color: burlywood; 
+}
+
+.box3{
+   grid-area: box3;
+   background-color: beige; 
+
+}

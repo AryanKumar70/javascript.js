@@ -1,0 +1,46 @@
+#rotate {
+    height: 100px;
+    width: 200px;
+    background-color: red;
+   /* transform: rotate(-20deg); */ /*yha rotate anticlockwisse direction*/
+   /*  transform: rotatex(30deg); */   /*yha X-axis me khichega box ko */
+
+    /*transform: translate(40px,50px);    /*(horizontal,verticle) me kitna move krna so length diye*/
+    margin-left: 100px; 
+    /*transform: scale(0.5,1.5); /*yha x and y axis me kitna length chahiye */
+
+    /*transform: scale(2) rotate(20deg) skew(10deg) translate(100px,50px) */ /*yha transform me sara properties ek saath hi */
+    background-color: blue;
+
+   
+
+}
+#rotate:hover{    /*kya changes lana h yha define kro*/
+    /*background-color: red; */
+   /* width: 400px;  /*itna width se length increase hoga*/
+   animation-name: widthandcolor;
+   animation-delay: 2s;
+   animation-duration: 5s;
+   animation-iteration-count: 3; /*kitna time chahiye*/
+   animation-direction: reverse;  
+
+   
+
+}
+@keyframes widthandcolor{  /*animation ke liye ye likhna padega --yha pahle 0% me se 100% tk changes define */
+    0%{
+        background-color: blue;
+        width: 100px;
+
+    }
+    50%{
+        background-color: black;
+    }
+    100%{
+        background-color: red;
+        width: 400px;
+
+    }
+}
+
+

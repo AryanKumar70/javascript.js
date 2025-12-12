@@ -1,0 +1,170 @@
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;  /*button ke end end me curve aayaga*/
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+
+}
+
+.btn-primary{
+    background-color: blue;
+    color: #fff;
+
+}
+.btn-primary:hover{
+    background-color: #0056b3;
+
+}
+
+.btn-secondary{
+    background-color: #f4e91d;
+    color: #000;
+
+}
+.btn-secondary:hover{
+    background-color: #d0c609;
+
+}
+/*-----------accordian start--------*/
+.accordion-item{
+    margin-bottom: 10px;
+    
+}
+.accordion-header{
+    background-color: #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.accordion-content{
+    max-height: 0;
+    overflow: hidden; /*jo mix ho rha tha line uko hide kr diye*/
+    transition: max-height 1s ease;    /*yha max-height 0 se 50px taki click krne ke badd effect dikhe turant nhi*/
+
+}
+.accordion-header:hover + .accordion-content{ /*(jb header pr hover krenge so content visible ho) so header+content kiye*/
+    max-height: 50px;
+}
+
+/*---loader-----*/
+
+.loader-1{
+    border: 5px solid #f3f3f3;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;  /*jitna radius utna rotate krega image*/
+    border-top: 5px solid #3498db;
+    border-bottom: 5px solid #3498db;
+    animation: spin1 1s linear infinite;
+
+}
+
+@keyframes spin1 {
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }
+}
+
+/*---loader2----*/
+.pulse-loader{
+    width: 20px;
+    height:20px;
+    background-color: #3498db;
+    border-radius: 50%;
+    animation: pulse 1s infinite ease-in-out;  /*pulse property h */
+}
+
+@keyframes pulse{  /*pulse property ka keyframe*/
+    0%{
+        transform: scale(0.8); /* yha pahle size normal se kam hoga*/
+        opacity: 0.7;         /*visible kam hoga 1 se kam pr*/
+    }
+    50%{
+        transform: scale(1);   /*yha normal size*/
+        opacity: 1;
+
+    }
+    100%{
+        transform:scale(0.8);  /*again size kam hoga*/
+        opacity:0.7
+    }
+}
+
+/*---bounce loader--*/
+.bounce-loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 5px;
+
+}
+.bounce-loader > div{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #3498db;
+    animation: bounce 1s infinite ease-in-out;
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+
+    }
+    50%{
+        transform:translateY(-15px) ;
+
+    }
+    100%{
+        transform: translateY(0);
+
+    }
+}
+.bounce-loader div:nth-child(2){
+    animation-delay: 0.3s;
+}
+
+/*-wave loader--*/
+.wave-loader{
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.wave-loader > div{
+    width: 10px;
+    height: 40px;
+    background-color: #3498db;
+    border-radius: 5px;
+    animation: wave 1s infinite ease-in-out;
+}
+@keyframes wave{
+    0%{
+        height: 40px;
+
+    }
+    50%{
+        height: 10px;
+
+    }
+    100%{
+        height:40px ;
+
+    }
+}
+.wave-loader div:nth-child(2){  /*yha specific div ka movement ko kam krskte h by delay*/
+    animation-delay: 0.3s;
+}
+.wave-loader div:nth-child(3){
+    animation-delay: 0.6s;
+}

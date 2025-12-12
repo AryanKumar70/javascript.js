@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 100%;
+
+}
+
+.navbar{
+    height: 75px;
+
+}
+
+ul{
+    width: 100%;
+    display: flex; /*display flex ka direction row by-default hota h*/
+    justify-content: flex-end;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 5px;
+    padding: 3px 2px;
+    background-color: pink;
+    
+}
+
+li{
+    border: 1px solid aquamarine;
+    padding: 4px 5px;
+    border-radius: 5px;
+    background-color: bisque;
+
+}
+span{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+@media screen and(min-width: 576px) { /*(min-width=576px) so min screen width 576 px hona chahiye and max kitna bhi ho skta h */
+    ul{
+        flex-direction: row;
+    }
+
+    
+    
+}

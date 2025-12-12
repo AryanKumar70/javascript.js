@@ -1,0 +1,44 @@
+#parent{
+    display:grid;  /*makes the parent containers*/
+
+    grid-template-columns: 100px 100px 100px;    /*  1fr=1/4 , 2fr=2/4*/
+
+    grid-template-rows: repeat(3,200px) ;   /* 3rows and uska size define usinng repeat function*/
+
+
+    width: 400px; 
+    height: 800px;    
+
+    border: 2px solid red;
+
+    padding: 12px;
+
+    background-color: cadetblue;
+
+    justify-content: space-evenly; /*controls how items in container are arranged horizontally*/
+    align-content: space-around ;  /*controls how items in container are arranged vertically*/
+
+   /* place-content: end space-evenly;    /*yha (align-content justify-content) in one line bhi likh skte h */
+
+   justify-items: stretch; /*control alignments inside grid item(child) horizontally*/
+
+   align-items: stretch; /*control alignments inside grid item(child) vertically*/
+
+
+
+
+
+}
+.child{
+    border: 1px solid black;
+
+    background-color: brown;
+
+    padding: 5px;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+
+

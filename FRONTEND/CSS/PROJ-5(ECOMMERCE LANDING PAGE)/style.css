@@ -1,0 +1,26 @@
+.b-example-divider {
+  height: 50px;                 /* thickness of divider */
+  background-color: #EEEEEE;   /* light gray color */
+  margin: 2rem 0;              /* spacing above and below */
+  border: none;                /* remove default border */
+  opacity: 0.8;                /* slight transparency */
+}
+.custom-divider{
+  height: 3rem;
+  background-color: white;
+
+}
+
+.product-image-container{
+    display: flex; /* flex dene se sara between me img aa gya  */
+    padding: 2rem ;
+    max-height: 250px;
+
+}
+
+
+
+.product-image{
+  max-height: 100% ;
+  max-width: 100% ;
+}

@@ -1,0 +1,35 @@
+#rotate {
+    height: 100px;
+    width: 200px;
+    background-color: red;
+   /* transform: rotate(-20deg); */ /*yha rotate anticlockwisse direction*/
+   /*  transform: rotatex(30deg); */   /*yha X-axis me khichega box ko */
+
+    /*transform: translate(40px,50px);    /*(horizontal,verticle) me kitna move krna so length diye*/
+    margin-left: 100px; 
+    /*transform: scale(0.5,1.5); /*yha x and y axis me kitna length chahiye */
+
+    /*transform: scale(2) rotate(20deg) skew(10deg) translate(100px,50px) */ /*yha transform me sara properties ek saath hi */
+    background-color: blue;
+
+   transition-property: background-color;
+   transition-duration: 5s;
+   transition-timing-function: ease-in;
+   transition: background-color 5s ease-in 2s; /*(property) (duration) (timing-function) (delay)*/
+   transition: width 5s ease-out 0s;*/
+    
+
+
+
+}
+#rotate:hover{    /*kya changes lana h yha define kro*/
+    background-color: red; 
+    width: 400px;  /*itna width se length increase hoga*/
+  
+
+}
+
+
+/*h1{
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+<head>    
+   
+<body>
+    <!---Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">Easy Cart</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+            </li>
+            
+            <li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Category
+                    </button>
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item" href="#">All Products</a></li>
+                        <li><a class="dropdown-item" href="#">Electronics</a></li>
+                        <li><a class="dropdown-item" href="#">KitchenWare</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+
+            </li>
+        </ul>
+        <form class="d-flex" role="search">
+            
+            <button class="btn btn-outline-success" type="submit">Cart <span id="cart-count">0</span></button>
+        </form>
+        </div>
+    </div>
+    </nav>
+
+    <!--carousel-->
+  <div class="custom-divider"></div>
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="https://cdn.prod.website-files.com/605826c62e8de87de744596e/66b9a6e182d716e727515048_6304972b0f458d536743e9d9_reebok.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+        <img src="https://images.vexels.com/content/194698/preview/shop-online-slider-template-4f2c60.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+        <img src="https://img.freepik.com/premium-psd/online-shop-instagram_81426-414.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+
+    <!---Cards-->
+    <div class="custom-divider"></div>
+
+    <div class="container"> <!--container dene se sara card screen ke bich me aa gya--->
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card" style="">
+                    <div class="product-image-container">
+                        <img src="./images/img2.webp" class="card-img-top product-image" alt="..."> 
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Camera</h5>
+                        <p class="card-text">₹20000-50000</p>
+                        <a href="#" class="btn btn-primary">View Option</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card" style="">
+                    <div class="product-image-container" >
+                        <img src="./images/best.webp" class="card-img-top product-image" alt="...">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Monitor</h5>
+                        <p class="card-text">₹20000-50000</p>
+                        <a href="#" class="btn btn-primary">View Option</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card" style="">
+                    <div class="product-image-container">
+                        <img src="./images/img3.webp" class="card-img-top product-image" alt="...">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Clock</h5>
+                        <p class="card-text">₹20000-50000</p>
+                        <a href="#" class="btn btn-primary">View Option</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card" style="">
+                    <div class="product-image-container">
+                        <img src="./images/img4.webp" class="card-img-top product-image" alt="...">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Sofa</h5>
+                        <p class="card-text">₹20000-50000</p>
+                        <a href="#" class="btn btn-primary">View Option</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+    
+    
+<!--- Footer of page --->
+  <div class="b-example-divider"></div>
+
+  </div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2021 Company, Inc</p>
+    </footer>
+</div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>

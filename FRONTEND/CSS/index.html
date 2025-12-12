@@ -1,0 +1,39 @@
+<!DOCTYPE html>             <!--(id>class>universal)- ye h priority in css ka jo bhi applied krenge uska -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css"> <!-- linking css to here from outside called -'outside css link'-->
+    <style>
+        * {      /*'universal selector'- h ye sb tag pr applied hojyega and class pr nhi bcoz preference of class high h isse --/*/
+            color: red;   
+        }
+        p,div{      /* 'Inline css styling' isme jo bhi tag mention kiye so jo bhi implementation krenge wo sara used tag me implement hoga*/
+            color: blue; /*yha jis me css dalna h so uska tag 'p' mention kiye and usme value diye mtlb color kon sa */
+            background-color: yellow;
+        }
+        #second-para{
+            color: red
+        }
+        .class1{
+            background-color: aquamarine;
+        }
+        .class2{
+            color:black;
+        }
+        .Third-para{
+            background-color: brown;
+
+        }
+    </style>
+</head>
+<body>
+    <p>This is a algocamp sample Programm</p>
+    <p id="second-para" class="class2"> This is Mern Stack Course of algocamp sample Programm</p> <!--'id' selector is used for individual line me css implement krne keliye yha name dedo and whi name head me selector bnake css dedo-->
+    <p class="class1 class2">cascading style sheet is CSS</p> <!--class me multiple selector use krskte h so yha two  name diye h-->
+    <p class="Third-para">This is a algocamp sample Programm</p>
+    <p style="color:aqua; background-color:aliceblue">Hellow This is Mern Stack course</p> <!--this called 'Internal CSS' me tag ke inside hi css ka kaam dale also[Higher priority me isko]-->
+    <div>you are inside div tag</div>    
+</body>
+</html>

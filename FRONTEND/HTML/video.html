@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video  width="600" height="200" src="video.mp4" autoplay controls>     <!-- 'src'- source h jha video h wha ka location , controls  me video ko play pause autoplay.. featrue kr skte h-->
+        <source src="movie.mp4" type="video/mp4"> <!--yha line by line source implement hoga agar nhi hua so next source check and if not then show not support video tag-->
+        <source src="movie.ogg" type="video/ogg"> 
+         Your browser does not support video tag.
+    </video>
+    <video  width="600" height="200"  controls preload="auto">  <!--preload 'auto' se jaise hi page me entery hoga video bhi play hona start ho jayega-->   
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg"> 
+        <img src="path/to/image" >
+        Your browser does not support video tag.
+    </video> 
+    <video  width="600" height="200"  controls preload="metadata">  <!--preload 'metadata' se when user enter in page then video loading start-->   
+        <source src="movie.mp4" type="video/mp4">    <!--and video duration time bhi screen me show hone lgega by 'metadata'-->
+        <source src="movie.ogg" type="video/ogg"> 
+        <img src="path/to/image" >
+        Your browser does not support video tag.
+    </video> 
+    <video  width="600" height="200"  controls preload="none">     
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg"> 
+        <img src="path/to/image" >
+        Your browser does not support video tag.
+    </video> 
+    <audio src="audio.mp3" controls>
+        Audion tag is not supported on this browser
+    </audio>
+    <img src="images.jpeg" alt="Techno Building" title="Techno India" width="400" height="300">  <!-- ye 'inline' hota mtlb two image ek hi line me render ho jayega -->
+    
+</body>
+</html>

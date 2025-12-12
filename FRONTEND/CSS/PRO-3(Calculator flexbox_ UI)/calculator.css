@@ -1,0 +1,84 @@
+html{
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+
+.Calculator{     /*flexbox property pahle parent pr denge tb hi child pr apply hoga */
+    display: flex;    /* yha flex diye so by default pahle display and keys rows me hi hoga */ 
+    flex-direction: column;   /* yha (flex-dir) me col kiye so display ke nicche aaya keys*/
+    width: 280px;          /* (70px * 4= sara button chipk ke rhega ) calculator parent ka total width diye h issi me display and keys rhega*/ 
+}
+
+.Calculator-keys{
+    width: 100%;    /* ab keys sara ek hi row me tha so ek row me 4 keys chahiye so width ka 100% krega so baaki sb nicche me and first row me 4 keys rhega */
+    display: flex ;  /*by default row direction h */
+    flex-direction: column;
+    /*flex-wrap: wrap;  /*flex wrap dene se multiple line me break hogya keys not in only one line */
+    /*justify-content: space-between;    /*(Main axix=ROW) keys ke bich me space dede gaa*/
+    /*(align items) me cross axix pr spacing hoga ulta axis */
+}
+
+.key-row-1, .key-row-2,.key-row-3{
+    width: 100%;
+
+}
+
+.key-row-1{
+    display: flex;
+}
+.key-row-3{
+    display: flex;
+    
+}
+
+.key-row-2{  
+    display: flex;
+    justify-content: space-between;
+}
+
+.numbers{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.symbols{
+    direction: flex;
+    flex-direction: column;
+}
+
+
+button{
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f7f7f7;
+    font-size: 25px;
+    width: 70px;  /* 1 button width h taki sara button ka width same rhe ek sequence me*/
+    outline: none;
+
+}
+
+.key-function{
+    background-color: #e8e8e8;
+}
+.key-operator{
+    background-color: #fe9241;
+}
+
+.key-equal{
+    background-color: #0a89ff;
+}
+.Calculator-display{    
+    width: 300px;
+    color: #fff;
+    background-color: #252525;
+    padding: 25px;
+    font-size: 2em;
+    border-bottom: 1px solid #2c2c2c;
+    text-align: right;
+    margin: 5px;  /*display ke baad space thora aaye*/
+}
