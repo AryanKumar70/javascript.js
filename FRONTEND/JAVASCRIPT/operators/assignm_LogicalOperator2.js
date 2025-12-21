@@ -20,7 +20,13 @@ console.log(true || true);
 console.log(!true);
 console.log(!false);
 
-console.log(10 && 30);  // FALSY VALUE (0) = +0 , -0 ,null,undefined, "" etc.
-console.log(0 && 30);
+// SHORT CIRCUITING 
+console.log(10 && 30); // "AND" operator used so agar first value true so return 2nd value (ANS=30) 
+console.log(0 && 30);  // "AND" operator used so agar first value False so return  False 2nd value of check bhi nhi krega
 console.log(10 && null);
 console.log("" && -0);
+
+console.log(10 || 30);  // "OR" operator used so first value is 'True' so return first value 2nd wla check mt kro
+console.log(0 || 30);   // "OR" operator used so first value is 'False' so return 2nd value
+console.log(10 || null);
+console.log("" ||-0);
