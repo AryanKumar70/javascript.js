@@ -14,4 +14,4 @@ function anotherfunction(f1){
 function hello(){
     console.log("hellow");
 }
-anotherfunction(hello);
+anotherfunction(hello); // yha 'anotherfunction(hello())' = paranthesis used kiye h so hello function me jo return value hoga whi print hoga and not return value so print undefined 
