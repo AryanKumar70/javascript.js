@@ -3,3 +3,4 @@ Object.defineProperty(product,"name",{writable:false}) // "defineprop" me (produ
 
 product.name = "VIVO";
 console.log(product); // but prices me change possible bcoz no striction in prices
+

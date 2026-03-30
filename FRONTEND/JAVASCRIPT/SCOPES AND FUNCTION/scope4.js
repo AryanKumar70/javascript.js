@@ -5,3 +5,5 @@ if(true){
     var y = 20; // global
     console.log(x,y);   // (20,20)
 }
+
+

@@ -11,7 +11,7 @@ class product {  // class is blueprint of object means ("class" is home ka naksa
         return {x:10} // yha "object" return ho skta h in constructor 
     }
 
-    addToCart(){   // data members ka functions
+    addToCart(){   // data members function h "means jo action ham le skte h "
         console.log("Product added to cart");
     }
 
@@ -30,3 +30,6 @@ class product {  // class is blueprint of object means ("class" is home ka naksa
 }
 
 let iphone = new product();  // object made 'iphone' with keyword 'new' and product name 'product'
+
+
+

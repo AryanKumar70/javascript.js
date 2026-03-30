@@ -12,3 +12,6 @@ var x = 20;  // here 'var' allow redeclaration
 console.log(x);
 var x = 20;
 console.log(x);
+
+
+

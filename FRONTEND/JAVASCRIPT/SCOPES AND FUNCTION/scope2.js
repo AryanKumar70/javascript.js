@@ -10,4 +10,3 @@ function fun(){              // phase-2 me value declare hota h
     }
     gun();
 }
-fun();

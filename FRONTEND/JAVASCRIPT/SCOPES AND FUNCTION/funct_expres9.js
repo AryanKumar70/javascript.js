@@ -11,7 +11,7 @@ arr.map(function (n){
 // anonymous function ko call krne ka method recursively
 arr.map(function (n){ 
     if(n==1) return 1;
-    return n*arguments.callee(n-1);  // 'arguments.callee' function call
+    return n*arguments.callee(n-1);  // 'arguments.callee' function call 
 })
 
 // Arrow function

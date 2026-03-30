@@ -16,3 +16,4 @@ products.name = "IPhone 14 pro Max"  // existing keys me change is allowed in "s
 console.log(products);  // update keys values pair
 
 
+

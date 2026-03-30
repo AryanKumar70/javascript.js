@@ -20,3 +20,5 @@ cake(); // function call to hi value print hoga
     let y = 55;
     console.log(y);  //  [Block Scope is "y"] = bcoz curley braket ke inside me y so block hua and andar me hi accessible not outside
 }
+
+    

@@ -11,3 +11,4 @@ console.log(returnvalue);
 arr.map(function square(element){ // map function ka use ese bhi krskte h 
     return element*element*element;
 })
+

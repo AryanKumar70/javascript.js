@@ -12,3 +12,4 @@ console.log(Object.keys(products).length)  // 'length' se keys ka total no bta d
 console.log(Object.values(products)); // values of keys printing methods
 
 console.log(Object.entries(products));  // "object.entries" se printing both keys and values.
+
