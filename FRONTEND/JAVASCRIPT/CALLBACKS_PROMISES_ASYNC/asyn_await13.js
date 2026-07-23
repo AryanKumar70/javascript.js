@@ -35,23 +35,20 @@ function upload(fileName ,url ){
 
 }
 
-function* exe(){
-    const downloadData = yield download("https://www.example.com");
+async function exe(){
+    console.log("start Execution: ");
+
+    const downloadData = await download("https://www.example.com"); // using "await"se immediately function ke bahar aayenge and promise resolve hoga then phir function me wapas jayenge for final resolve
     console.log("Data Downloaded is " , downloadData );
 
-    const fileResponse = yield writeFile(downloadData , "example.txt");
+    const fileResponse = await writeFile(downloadData , "example.txt");
     console.log("File write status " , fileResponse );
 
-    const uploadStatus = yield upload("example.txt" , "https://www.example.com");
+    const uploadStatus = await upload("example.txt" , "https://www.example.com");
     console.log("Upload status " , uploadStatus );
 
     return uploadStatus;
 }
 
-const it = exe(); //1. exe function will return us an generator object having an iterator
-const ft = it.next(); //2. yha value and done ke result print hoga  so first yield "download" se start hoga printing  // it.next() return Value :"PROMISE"
-console.log("ft is " , ft);
-ft.value.then(function doAfterReceiving(value) { //3. "When this Promise finishes successfully, execute the function inside .then()."
-    console.log("calling  do after receiving after Download is fininshed" , value);
+exe();
 
-})
